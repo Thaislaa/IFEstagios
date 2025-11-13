@@ -1,0 +1,200 @@
+:root {
+    --primary-color: #0f4b07;
+    --padding: 10px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+}
+
+ul {
+    list-style: none;
+    padding: var(--padding);
+}
+
+a {
+    text-decoration: none;
+    color: rgb(191, 189, 189);
+}
+
+a:hover {
+    color: #7ed957;
+}
+
+li {
+    padding: var(--padding);
+    display: flex;
+
+    align-items: center;
+}
+
+#logo-item {
+    padding: 0;
+}
+
+header {
+    background-color: var(--primary-color);
+}
+
+#img-logo-peq {
+    display: none;
+}
+
+#img-home {
+    display: none;
+}
+
+.active {
+    color: white;
+}
+
+.container-maior {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    padding: 20px;
+}
+
+.container {
+    width: 420px;
+    height: 450px;
+    box-shadow: var(--primary-color) 0px 2px 10px 0px;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+form>input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 15px;
+    border: 1px solid #ccc;
+}
+
+
+button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 25px;
+    border: 1px solid var(--primary-color);
+    background-color: var(--primary-color);
+    color: white;
+    cursor: pointer;
+}
+
+button:hover{
+    color: #7ed957;
+}
+
+.container > p{
+    color: #606060;
+    margin-top: 15px;
+    font-size: 17px;
+}
+
+#entrar{
+    font-size: 15px;
+}
+
+#cadastro{
+    font-weight: 700;
+    color: #0f4b07;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+    font-size: 18px
+}
+
+::placeholder{
+    font-size: 17px;
+}
+
+#nao-perca{
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.container > h1{
+    margin-top: 10px;
+    font-size: 42px;
+}
+
+.text-center{
+    text-align: center;
+}
+
+
+
+@media screen and (max-width: 410px) {
+    ul {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 410px) {
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    #logo-item {
+        margin-right: auto;
+    }
+
+    #img-logo-peq {
+        width: 60px;
+        height: 60px;
+        margin: 0;
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 744px) {
+
+    #logo-item {
+        margin-right: auto;
+        padding: 10px;
+    }
+
+    ul {
+        padding: 0;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    #img-logo-peq {
+        width: 60px;
+        height: 60px;
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+
+    #logo-item {
+        margin-right: auto;
+    }
+
+    ul {
+        padding: 0;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    #img-logo-peq {
+        width: 60px;
+        height: 60px;
+    }
+
+}

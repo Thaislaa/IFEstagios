@@ -1,0 +1,168 @@
+:root {
+    --primary-color: #0f4b07;
+    --padding: 10px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+ul {
+    list-style: none;
+    padding: var(--padding);
+}
+
+#logo-item {
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(191, 189, 189);
+}
+
+a:hover {
+    color: #7ed957;
+}
+
+li {
+    padding: var(--padding);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    background-color: var(--primary-color);
+}
+
+#img-logo-peq {
+    display: none;
+}
+
+#img-home {
+    display: none;
+}
+
+.active {
+    color: white;
+}
+
+h1 {
+    color: #0f4b07;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 40px;
+}
+
+#btn {
+    background-color: #0f4b07;
+}
+
+.btn-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.p-btn{
+    margin-top: 10px;
+    font-size: 18px;
+    color: rgb(105, 105, 105);
+    font-weight: normal;
+    padding: 3px;
+}
+
+.btn-principal, .btn-principal1{
+    color: #0f4b07;
+    font-size: 26px;
+    font-weight: 600;
+    padding: 20px;
+    width: 900px;
+    margin-bottom: 15px;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    background-color: #f7f6f6;
+}
+
+.infos{
+    text-align: center;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 410px) {
+    ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (min-width: 410px) {
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    #logo-item {
+        margin-right: auto;
+    }
+
+    #img-logo-peq {
+        width: 60px;
+        height: 60px;
+        margin: 0;
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 744px) {
+
+    #logo-item {
+        margin-right: auto;
+        padding: 10px;
+    }
+
+    ul {
+        padding: 0;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    #img-logo-peq {
+        width: 60px;
+        height: 60px;
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+
+    #logo-item {
+        margin-right: auto;
+    }
+
+    ul {
+        padding: 0;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    #img-logo-peq {
+        width: 60px;
+        height: 60px;
+    }
+
+}
