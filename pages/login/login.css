@@ -90,21 +90,21 @@ button {
     cursor: pointer;
 }
 
-button:hover{
+button:hover {
     color: #7ed957;
 }
 
-.container > p{
+.container>p {
     color: #606060;
     margin-top: 15px;
     font-size: 17px;
 }
 
-#entrar{
+#entrar {
     font-size: 15px;
 }
 
-#cadastro{
+#cadastro {
     font-weight: 700;
     color: #0f4b07;
     display: flex;
@@ -114,21 +114,21 @@ button:hover{
     font-size: 18px
 }
 
-::placeholder{
+::placeholder {
     font-size: 17px;
 }
 
-#nao-perca{
+#nao-perca {
     margin-bottom: 10px;
     font-size: 20px;
 }
 
-.container > h1{
+.container>h1 {
     margin-top: 10px;
     font-size: 42px;
 }
 
-.text-center{
+.text-center {
     text-align: center;
 }
 

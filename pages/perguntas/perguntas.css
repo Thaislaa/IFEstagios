@@ -70,7 +70,7 @@ h1 {
 
 }
 
-.p-btn{
+.p-btn {
     margin-top: 10px;
     font-size: 18px;
     color: rgb(105, 105, 105);
@@ -78,7 +78,8 @@ h1 {
     padding: 3px;
 }
 
-.btn-principal, .btn-principal1{
+.btn-principal,
+.btn-principal1 {
     color: #0f4b07;
     font-size: 26px;
     font-weight: 600;
@@ -91,7 +92,7 @@ h1 {
     background-color: #f7f6f6;
 }
 
-.infos{
+.infos {
     text-align: center;
 }
 

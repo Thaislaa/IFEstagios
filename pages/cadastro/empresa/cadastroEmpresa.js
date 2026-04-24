@@ -31,7 +31,7 @@ olhos.forEach((icone, index) => {
         const senha = camposSenha[index];
         if (senha.type === "password") {
             senha.type = "text";
-            icone.innerHTML = olhoFechado; 
+            icone.innerHTML = olhoFechado;
         } else {
             senha.type = "password";
             icone.innerHTML = olhoAberto;

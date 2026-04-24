@@ -80,7 +80,7 @@ form>input {
     font-size: 18px;
 }
 
-form>textarea{
+form>textarea {
     width: 100%;
     padding: 10px;
     border-radius: 5px;
@@ -90,7 +90,7 @@ form>textarea{
     font-size: 18px;
 }
 
-textarea::placeholder{
+textarea::placeholder {
     font-family: 'Times New Roman', Times, serif;
     font-size: 18px;
 }
@@ -102,7 +102,7 @@ textarea::placeholder{
     height: 73vh;
 }
 
-#mensagem-contato{
+#mensagem-contato {
     font-size: 18px;
 }
 
@@ -118,7 +118,7 @@ button {
     font-size: 14px;
 }
 
-.text-center{
+.text-center {
     text-align: center;
 }
 
@@ -144,7 +144,7 @@ button:hover {
 
     #logo-item {
         margin-right: auto;
-        
+
     }
 
     #img-logo-peq {
@@ -154,14 +154,14 @@ button:hover {
         display: flex;
     }
 
-    .container-maior{
+    .container-maior {
         height: 87vh;
     }
 
-    .container{
+    .container {
         padding: 40px;
     }
-    
+
 }
 
 

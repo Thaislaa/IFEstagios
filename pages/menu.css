@@ -22,7 +22,7 @@ a {
     color: rgb(191, 189, 189);
 }
 
-a:hover{
+a:hover {
     color: #7ed957;
 }
 
@@ -45,7 +45,7 @@ header {
     display: none;
 }
 
-.active{
+.active {
     color: white;
 }
 
@@ -83,7 +83,7 @@ header {
         padding: 10px;
     }
 
-    ul{
+    ul {
         padding: 0;
         margin-left: 40px;
         margin-right: 40px;
@@ -102,12 +102,12 @@ header {
         margin-right: auto;
     }
 
-    ul{
+    ul {
         padding: 0;
         margin-left: 40px;
         margin-right: 40px;
     }
-    
+
     #img-logo-peq {
         width: 60px;
         height: 60px;

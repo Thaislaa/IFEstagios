@@ -94,7 +94,7 @@ header {
     width: 150px;
 }
 
-.n-select{
+.n-select {
     color: rgb(70, 70, 70);
 }
 
@@ -116,14 +116,14 @@ header {
     width: 150px;
 }
 
-.container{
+.container {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px;
 }
 
-.cont{
+.cont {
     width: 500px;
     background-color: #EBEAEA;
     padding: 20px;
@@ -131,19 +131,19 @@ header {
     margin-top: 20px;
 }
 
-input{
+input {
     width: 100%;
     border-radius: 5px;
     height: 30px;
     border: none;
 }
 
-input{
+input {
     margin-bottom: 15px;
     margin-top: 10px;
 }
 
-#btn-cadastrar{
+#btn-cadastrar {
     width: 100%;
     border: none;
     border-radius: 5px;
@@ -154,7 +154,7 @@ input{
     cursor: pointer;
 }
 
-#btn-cadastrar:hover{
+#btn-cadastrar:hover {
     background-color: #7ed957;
 }
 

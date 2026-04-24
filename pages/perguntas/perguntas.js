@@ -15,7 +15,7 @@ botoes.forEach((botao, index) => {
         if (p.innerText === textos[index]) {
             p.innerText = "";
         } else {
-            p.innerText = textos[index]; 
+            p.innerText = textos[index];
         }
     });
 });
