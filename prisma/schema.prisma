@@ -1,0 +1,53 @@
+generator client {
+  provider = "prisma-client"
+  output   = "../generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model Estudante {
+  id        String  @id @default(uuid())
+  nome      String  @db.VarChar(255)
+  curso     String  @db.VarChar(255)
+  turno     String  @db.VarChar(255)
+  email     String  @unique @db.VarChar(255)
+  senha     String  @db.VarChar(255)
+  linkedin  String? @db.VarChar(255)
+  curriculo String? @db.VarChar(255)
+
+  dtCriacao     DateTime @default(now()) @map("dt_criacao")
+  dtAtualizacao DateTime @updatedAt @map("dt_atualizacao")
+
+  @@map("estudantes")
+}
+
+model Empresa {
+  id                String @id @default(uuid())
+  razaoSocial       String @map("razao_social") @db.VarChar(255)
+  nomeFantasia      String @map("nome_fantasia") @db.VarChar(255)
+  enderecoComercial String @map("endereco_comercial") @db.VarChar(255)
+  setorAtuacao      String @map("setor_atuacao") @db.VarChar(255)
+  emailCorporativo  String @unique @map("email_corporativo") @db.VarChar(255)
+  cnpj              String @unique @db.VarChar(18)
+  senha             String @db.VarChar(255)
+
+  dtCriacao     DateTime @default(now()) @map("dt_criacao")
+  dtAtualizacao DateTime @updatedAt @map("dt_atualizacao")
+
+  @@map("empresas")
+}
+
+model Contato {
+  id        Int      @id @default(autoincrement())
+  nome      String   @db.VarChar(255)
+  email     String   @db.VarChar(255)
+  mensagem  String   @db.Text
+  dataEnvio DateTime @default(now())
+
+  dtCriacao     DateTime @default(now()) @map("dt_criacao")
+  dtAtualizacao DateTime @updatedAt @map("dt_atualizacao")
+
+  @@map("contatos")
+}
