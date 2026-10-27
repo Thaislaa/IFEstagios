@@ -1,8 +1,8 @@
-import { prisma } from "../../lib/prisma.js";
+import { prisma } from "../database/prisma.js";
 import type { CreateEmpresaDto } from "../dtos/create-empresa.dto.js";
 import type { UpdateEmpresaDto } from "../dtos/update-empresa.dto.js";
 
-export class EmpresaRepository {
+export class EmpresaService {
     public async listar() {
         const empresas = await prisma.empresa.findMany()
         return empresas

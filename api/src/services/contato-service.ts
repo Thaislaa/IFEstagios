@@ -1,7 +1,7 @@
-import { CreateContatoDto } from './../dtos/create-contato.dto';
-import { prisma } from "../../lib/prisma.js";
+import { prisma } from "../database/prisma.js";
+import type { CreateContatoDto } from "../dtos/create-contato.dto.js";
 
-export class ContatoRepository {
+export class ContatoService {
     public async listar() {
         const contatos = await prisma.contato.findMany()
         return contatos

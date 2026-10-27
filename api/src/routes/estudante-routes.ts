@@ -1,9 +1,9 @@
 import { Router } from "express";
-import { EstudanteRepository } from "../repositories/estudante-repository.js";
+import { EstudanteService } from "../services/estudante-service.js";
 
 const estudanteRoutes = Router();
 
-const estudanteRepository = new EstudanteRepository();
+const estudanteRepository = new EstudanteService();
 
 estudanteRoutes.get("/", async (req, res) => {
     const estudantes = await estudanteRepository.listar();
