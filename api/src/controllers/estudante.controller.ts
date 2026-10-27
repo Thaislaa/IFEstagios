@@ -86,7 +86,7 @@ export class EstudanteController {
 
     public async atualizar(req: Request, res: Response) {
         try {
-            const estudanteId = req.body.id;
+            const estudanteId = req.params.id;
 
             if (!isValidId(estudanteId)) {
                 return res.status(400).send({
@@ -134,7 +134,7 @@ export class EstudanteController {
 
     public async deletar(req: Request, res: Response) {
         try {
-            const estudanteId = req.params;
+            const estudanteId = req.params.id;
 
             if (!isValidId(estudanteId)) {
                 return res.status(400).send({
