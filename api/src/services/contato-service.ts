@@ -7,7 +7,7 @@ export class ContatoService {
         return contatos
     }
 
-    public async obterPorId(id: number) {
+    public async obterPorId(id: string) {
         const contato = await prisma.contato.findUnique({
             where: {
                 id
@@ -25,7 +25,7 @@ export class ContatoService {
         return contato
     }
 
-    public async deletar(id: number) {
+    public async deletar(id: string) {
         const contato = await prisma.contato.delete({
             where: {
                 id
