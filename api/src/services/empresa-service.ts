@@ -46,4 +46,14 @@ export class EmpresaService {
 
         return empresa
     }
+
+    public async obterEmpresaPorEmail(emailCorporativo: string) {
+        const empresa = await prisma.empresa.findUnique({
+            where: {
+                emailCorporativo
+            }
+        })
+
+        return empresa
+    }
 }
