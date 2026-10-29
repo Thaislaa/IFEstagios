@@ -46,4 +46,14 @@ export class EstudanteService {
 
         return estudante
     }
+
+    public async obtemEstudantePorEmail(email: string) {
+        const estudante = await prisma.estudante.findUnique({
+            where: {
+                email
+            }
+        })
+
+        return estudante
+    }
 }
