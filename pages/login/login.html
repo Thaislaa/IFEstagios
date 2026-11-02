@@ -27,11 +27,19 @@
             <div class="container">
                 <h1 class="text-center">Login</h1>
                 <p id="nao-perca">Não perca as últimas vagas de estágio da sua área profissional.</p>
-                <form>
-                    <input type="email" placeholder="E-mail"><br>
-                    <input type="password" placeholder="Senha">
+                <form id="form-login">
+                    <input type="email" id="email" placeholder="E-mail" autocomplete="username" required>
+                    <br>
+                    <input type="password" id="senha" placeholder="Senha" autocomplete="current-password" required>
+                    <br>
+                    <select id="tipo" required>
+                        <option value="">Selecione o tipo de conta</option>
+                        <option value="estudante">Estudante</option>
+                        <option value="empresa">Empresa</option>
+                    </select>
+
+                    <button type="submit" id="entrar">Entrar</button>
                 </form>
-                <button id="entrar">Entrar</button>
                 <p class="text-center">Não tem conta?</p>
                 <a href="../cadastro/empresa/cadastroEmpresa.html" id="cadastro" class="text-center">Cadastre-se</a>
             </div>
@@ -39,5 +47,7 @@
     </main>
 
 </body>
+
+<script src="login.js"></script>
 
 </html>
